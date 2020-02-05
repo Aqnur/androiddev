@@ -6,7 +6,22 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity"
+    android:background="#ffff"
     >
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="15dp"
+            android:src="@drawable/arrow"
+            android:scaleType="centerCrop"
+            android:background="#fff"
+            />
+    </androidx.appcompat.widget.Toolbar>
 
     <ImageView
         android:layout_width="150dp"
@@ -14,47 +29,50 @@
         android:scaleType="fitCenter"
         android:layout_gravity="center_horizontal"
         android:src="@drawable/olx"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="-30dp"
         />
 
     <Button
         android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="10dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="30dp"
         android:layout_gravity="center_horizontal"
-        android:text="Войдите через Facebook"
+        android:text="     Войдите через Facebook"
         android:background="#3b5998"
         android:textColor="@android:color/white"
         android:drawableLeft="@drawable/facebook"
         android:paddingLeft="30dp"
         android:textAllCaps="false"
+        android:textAlignment="textStart"
         />
 
     <Button
         android:layout_width="300dp"
-        android:layout_height="50dp"
+        android:layout_height="55dp"
         android:layout_gravity="center_horizontal"
-        android:textAllCaps="false"
-        android:text="Войти с email-адресом"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/shape"
-        android:drawableLeft="@drawable/post"
+        android:drawableLeft="@drawable/daskasdf"
         android:paddingLeft="20dp"
-        />
+        android:text="@string/diff_num"
+        android:textAllCaps="false"
+        android:textColor="#0099ff"
+        android:textAlignment="textStart"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="50dp"
         android:text="Выбрать другой способ входа"
         />
     <TextView
-        android:layout_width="300dp"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="Входя в систему, вы соглашаетесь с правилами сервиса"
-        android:layout_marginTop="200dp"
+        android:layout_marginLeft="50dp"
+        android:text="@string/foot"
+        android:layout_marginTop="190dp"
+        android:textSize="12dp"
         />
 
 </LinearLayout>
