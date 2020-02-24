@@ -1,24 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="180dp"
     android:background="#1c50eb">
-    <Button
+    <GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:text="sqrt"
-        />
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:text="^2"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:text="%"/>
+        android:columnCount="4">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/AdvancedButtons"
+            android:text="sin"
+            android:onClick="btnClick_sin"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/AdvancedButtons"
+            android:text="cos"
+            android:onClick="btnClick_cos"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/AdvancedButtons"
+            android:text="tan"
+            android:onClick="btnClick_tan"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/AdvancedButtons"
+            android:text="sqrt"
+            android:onClick="btnClick_root"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/AdvancedButtons"
+            android:text="^2"
+            android:onClick="btnClick_sqr"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/AdvancedButtons"
+            android:text="^"
+            android:onClick="btnClick_power"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/AdvancedButtons"
+            android:text="%"
+            android:onClick="btnClick_percent"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/AdvancedButtons"
+            android:text="ln"
+            android:onClick="btnClick_ln"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/AdvancedButtons"
+            android:text="log"
+            android:onClick="btnClick_log"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/AdvancedButtons"
+            android:text="!"
+            android:onClick="btnClick_factorial"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/AdvancedButtons"
+            android:text="n(sqrt)"
+            android:onClick="btnClick_nsqrt"/>
 
-
+    </GridLayout>
 </LinearLayout>

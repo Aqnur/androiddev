@@ -1,62 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    >
 
     <GridLayout
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_height="320dp"
         android:rowCount="4"
         style="@style/PadButtonStyle"
         android:columnCount="3"
         >
         <Button
+            android:id="@+id/num7"
             style="@style/PadButtonStyle"
             android:text="7"
+            android:onClick="btnClick_7"
             />
         <Button
+            android:id="@+id/num8"
             style="@style/PadButtonStyle"
             android:text="8"
+            android:onClick="btnClick_8"
             />
         <Button
+            android:id="@+id/num9"
             style="@style/PadButtonStyle"
             android:text="9"
+            android:onClick="btnClick_9"
             />
         <Button
+            android:id="@+id/num4"
             style="@style/PadButtonStyle"
             android:text="4"
+            android:onClick="btnClick_4"
             />
         <Button
+            android:id="@+id/num5"
             style="@style/PadButtonStyle"
             android:text="5"
+            android:onClick="btnClick_5"
             />
         <Button
+            android:id="@+id/num6"
             style="@style/PadButtonStyle"
             android:text="6"
+            android:onClick="btnClick_6"
             />
         <Button
+            android:id="@+id/num1"
             style="@style/PadButtonStyle"
             android:text="1"
+            android:onClick="btnClick_1"
             />
         <Button
+            android:id="@+id/num2"
             style="@style/PadButtonStyle"
             android:text="2"
+            android:onClick="btnClick_2"
             />
         <Button
+            android:id="@+id/num3"
             style="@style/PadButtonStyle"
             android:text="3"
+            android:onClick="btnClick_3"
             />
         <Button
+            android:id="@+id/num0"
             style="@style/PadButtonStyle"
             android:text="0"
+            android:onClick="btnClick_0"
             />
         <Button
+            android:id="@+id/dot"
             style="@style/PadButtonStyle"
-            android:text=","
+            android:text="."
+            android:onClick="btnClick_dot"
             />
-        <Button
-            style="@style/PadButtonStyle"
-            android:text="="
-            />
+
     </GridLayout>
 </RelativeLayout>

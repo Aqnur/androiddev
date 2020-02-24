@@ -30,10 +30,9 @@
     <include
         layout="@layout/display"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-
+        android:layout_height="200dp"
         />
-
+    <include layout="@layout/advanced"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dip"
@@ -41,7 +40,6 @@
 
         <include layout="@layout/buttons"/>
         <include layout="@layout/operations"/>
-        <include layout="@layout/advanced"/>
     </LinearLayout>
 
 </LinearLayout>
