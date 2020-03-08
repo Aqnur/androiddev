@@ -20,7 +20,6 @@ import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 
 public class MainActivity extends AppCompatActivity {
 
-    private RecyclerView recyclerView;
 
     private int[] accountImages = {R.drawable.pic1,R.drawable.pic2,
             R.drawable.pic3,R.drawable.pic4,R.drawable.pic5,
@@ -48,8 +47,8 @@ public class MainActivity extends AppCompatActivity {
     private String[] names = {"Aknur", "Doka", "Bagynur", "Arnur", "Anuar",
                                 "Adeka", "Aiba", "Rama", "Adlet", "Alibek"};
 
+    private RecyclerView recyclerView;
     private RecyclerViewAdapter adapter;
-
     private RecyclerView.LayoutManager layoutManager;
 
     @Override
@@ -74,6 +73,11 @@ public class MainActivity extends AppCompatActivity {
         adapter = new RecyclerViewAdapter(images, names, accountImages, captions, this);
         recyclerView.setAdapter(adapter);
 
+        StoryAdapter storyAdapter = new StoryAdapter(images, names, this);
+        RecyclerView storyRecycler = findViewById(R.id.story_recycler);
+        storyRecycler.setLayoutManager(new LinearLayoutManager(this, RecyclerView.HORIZONTAL, false));
+
+        storyRecycler.setAdapter(storyAdapter);
     }
 
     @Override

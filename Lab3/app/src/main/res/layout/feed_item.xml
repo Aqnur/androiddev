@@ -2,7 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:id="@+id/parent_layout">
 
     <de.hdodenhof.circleimageview.CircleImageView
@@ -38,10 +38,11 @@
     <ImageView
         android:id="@+id/post_image"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="500dp"
         android:scaleType="centerCrop"
         app:layout_constraintTop_toBottomOf="@id/user_photo_image"
-        app:layout_constraintBottom_toTopOf="@id/like_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         android:background="#ACE8EE"
         android:src="@drawable/pic1"
         />
@@ -51,7 +52,6 @@
         android:src="@drawable/like_photo"
         app:layout_constraintTop_toBottomOf="@id/post_image"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/likes_text"
         android:background="#fff"
         />
 
@@ -78,8 +78,7 @@
         style="@style/icon2"
         android:src="@drawable/ic_izbrannoe"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/share_image"
-        app:layout_constraintTop_toTopOf="@id/share_image"
+        app:layout_constraintTop_toBottomOf="@id/post_image"
         />
 
     <TextView
@@ -91,7 +90,6 @@
         android:textColor="#000"
         app:layout_constraintTop_toBottomOf="@id/like_image"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/caption_text"
         android:layout_marginStart="10dp"/>
     <TextView
         android:id="@+id/text"
@@ -113,7 +111,6 @@
         android:textColor="#000"
         app:layout_constraintTop_toBottomOf="@id/likes_text"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
         android:text="Toktarov Aknur this is a caption for the post. It's actally very long caption."
         />
 

@@ -89,6 +89,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     public int getItemCount(){
         return images.length;
     }
+
     @SuppressLint("")
     public static class ImageViewHolder extends RecyclerView.ViewHolder{
         ImageView post_image;
