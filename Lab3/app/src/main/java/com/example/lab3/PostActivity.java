@@ -15,7 +15,7 @@ import com.bumptech.glide.Glide;
 public class PostActivity extends AppCompatActivity {
 
     ImageView like_image;
-    private static final String TAG = "PostActivity";
+
     private int images[];
     @Override
     protected void onCreate(Bundle savedInstanceState) {
