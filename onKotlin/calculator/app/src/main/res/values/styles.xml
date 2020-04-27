@@ -1,0 +1,62 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">#fff</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+
+    <style name="PadButtonStyle" parent="@style/Widget.AppCompat.Button.Borderless">
+        <item name="android:textSize">35sp</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:layout_width">90dp</item>
+    </style>
+    <style name="PadButtonStylel" parent="@style/Widget.AppCompat.Button.Borderless">
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:layout_width">90dp</item>
+    </style>
+    <style name="oppButtonStyle" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:textColor">#1c50eb</item>
+        <item name="android:layout_width">70dp</item>
+        <item name="android:padding">0dp</item>
+    </style>
+    <style name="oppButtonStylel" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:textColor">#1c50eb</item>
+        <item name="android:layout_width">70dp</item>
+        <item name="android:padding">0dp</item>
+    </style>
+    <style name="DisplayEditTextStyle">
+        <item name="android:paddingTop">56dip</item>
+        <item name="android:paddingBottom">15dip</item>
+        <item name="android:paddingStart">16dip</item>
+        <item name="android:paddingEnd">16dip</item>
+        <item name="android:textSize">40sp</item>
+    </style>
+    <style name="AdvancedButtons" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+</resources>

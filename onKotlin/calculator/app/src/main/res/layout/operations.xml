@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@drawable/border">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="340dp"
+        android:columnCount="2"
+        android:rowCount="4"
+        android:layout_marginTop="15dp"
+        >
+
+        <Button
+            android:id="@+id/op_div"
+            style="@style/oppButtonStyle"
+            android:onClick="btnClick_divide"
+            android:text="/" />
+
+        <Button
+            android:id="@+id/del"
+            style="@style/oppButtonStyle"
+            android:onClick="btnClick_delete"
+            android:text="del"/>
+
+        <Button
+            android:id="@+id/op_mul"
+            style="@style/oppButtonStyle"
+            android:onClick="btnClick_multiply"
+            android:text="x" />
+
+        <Button
+            android:id="@+id/clr"
+            style="@style/oppButtonStyle"
+            android:onClick="btnClick_clear"
+            android:text="clr" />
+
+        <Button
+            android:id="@+id/op_sub"
+            style="@style/oppButtonStyle"
+            android:onClick="btnClick_subtract"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/op_eq"
+            style="@style/oppButtonStyle"
+            android:onClick="btnClick_equal"
+            android:text="=" />
+
+        <Button
+            android:id="@+id/op_add"
+            style="@style/oppButtonStyle"
+            android:onClick="btnClick_add"
+            android:text="+" />
+    </GridLayout>
+</RelativeLayout>

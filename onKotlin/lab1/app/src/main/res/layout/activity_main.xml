@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#ffff"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="15dp"
+            android:src="@drawable/arrow"
+            android:scaleType="centerCrop"
+            android:background="#fff"
+            />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="fitCenter"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/olx"
+        android:layout_marginTop="-30dp"
+        />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:text="     Войдите через Facebook"
+        android:background="#3b5998"
+        android:textColor="@android:color/white"
+        android:drawableLeft="@drawable/facebook"
+        android:paddingLeft="30dp"
+        android:textAllCaps="false"
+        />
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape"
+        >
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/daskasdf"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginVertical="10dp"/>
+        <TextView
+            android:id="@+id/text"
+            android:textColor="#0099ff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/img"
+            android:layout_marginLeft="20dp"
+            android:text="Войдите с email-адресом "
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text"
+            android:textColor="#0099ff"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/img"
+            android:textSize="12dp"
+            android:text="или номером телефона"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:text="Выбрать другой способ входа"
+        />
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:text="@string/foot"
+        android:layout_marginTop="240dp"
+        android:textSize="12dp"
+        />
+
+</LinearLayout>
